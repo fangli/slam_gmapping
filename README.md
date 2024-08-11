@@ -46,3 +46,4 @@ you can use explore lite ore teleop
 ```
 ros2 run turtlebot3_teleop teleop_keyboard
 ```
+![dynamic transform](slam_gmapping/media/gmapping_test.gif)
