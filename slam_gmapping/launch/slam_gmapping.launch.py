@@ -4,7 +4,7 @@ from launch.substitutions import LaunchConfiguration
 from launch.actions import DeclareLaunchArgument
 
 def generate_launch_description():
-    use_sim_time = LaunchConfiguration('use_sim_time', default='true')
+    use_sim_time = LaunchConfiguration('use_sim_time', default='false')
     param_file = LaunchConfiguration('param_file', default='slam_gmapping/param/slam_gmapping_params.yaml')
 
     return LaunchDescription([
@@ -15,7 +15,7 @@ def generate_launch_description():
         ),
         DeclareLaunchArgument(
             'use_sim_time',
-            default_value='true',
+            default_value='false',
             description='Use simulation time if true'
         ),
         
